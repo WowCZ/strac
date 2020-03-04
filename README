@@ -3,8 +3,8 @@
 If you are reading this you have probably already downloaded the PyDial repo but if
 you havent, do it now:
 
-> git clone https://speechlab.sjtu.edu.cn/gitlab/zc825/ParallelPyDial_v2.0.git
-> cd ParallelPyDial_v2.0
+> git clone https://github.com/WowCZ/strac.git
+> cd strac
 
 PyDial uses Python 2.7 and has not been tested with other versions. Ensure 
 that you use the requirements.txt file to install the appropriate dependencies
