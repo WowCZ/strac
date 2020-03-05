@@ -23,15 +23,20 @@ Finally, install the documentation
 Then point your browser at documentation/Docs/index.html.  If PyDial is new to you,
 read the Tutorial "Introduction to PyDial".
 
+==================================================================
 If you want to train the dialogue policy STRAC-S on each single domain, there are two ways to do this.
+
 (1) You can reduce three training threads into one, which can be implemented at line 872 of 'pydial.py'. Then you can train STRAC-S with
+
 > python pydial.py parallelTrain parallelConfig/strac/env1-maa2c-CR.cfg --seed=0
 
-(2) This is a easier way to train STRAC-S than method (1). You can directly use 
+(2) This is a easier way to train STRAC-S than method (1). You can directly use
+
 > python pydial.py parallelTrain parallelConfig/strac/env1-maa2c-CR.cfg parallelConfig/strac/env1-maa2c-CR.cfg parallelConfig/strac/env1-maa2c-CR.cfg --seed=0,
+
 which is nearly equal to method (1) with three times of batch size.
 
-
+==================================================================
 If you want to train the dialogue policy STRAC-M, please refer to
 
 > python pydial.py parallelTrain parallelConfig/strac/env1-maa2c-CR.cfg parallelConfig/strac/env1-maa2c-SFR.cfg parallelConfig/strac/env1-maa2c-LAP.cfg --seed=0
